@@ -5,22 +5,20 @@ import ListaTareas from './componentes/ListaTareas'
 import './estilos/App.css'
 const App = () => {
  
-  //Obtenemos las tareas guardadas en LocalStorage.
+ //Obtenemos las tareas guardadas en LocalStorage.
   const tareasGuardadas = localStorage.getItem('tareas') ? JSON.parse(localStorage.getItem('tareas')) : []
 
-   //Hay que parsear para que se vuelvan un array, las tareas traídas de localS. ya que son string.
-
-
-//  Al recargar la pag. el estado inicial, se muestra con las tareas del LocalStorage guardadas.           
+ //estado general
   const [tareas,setTareas] = useState(tareasGuardadas) 
 
-//Guardando el estado en localStorage (c/ vez que cambie tareas, se guardará)
+//--------------------------------------------
   useEffect(() => {
   localStorage.setItem('tareas' ,JSON.stringify(tareas));
   },[tareas]) 
 
 //estado para mostrar u ocultar tareas completadas: 
-  const [mostrarCompletadas, setMostrarCompletadas] = useState(true)
+ 
+ const [mostrarCompletadas, setMostrarCompletadas] = useState(true)
 
   return (
  <div className='contenedor'>  
