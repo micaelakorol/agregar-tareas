@@ -1,7 +1,6 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome' //importamos el componente 
-import { faEyeSlash , faEye} from '@fortawesome/free-solid-svg-icons'  //importamos los icons a usar c/ su nombre
-//usando metodologia bem CSS:
+import { faEyeSlash , faEye} from '@fortawesome/free-solid-svg-icons' 
 
   const Header = ({mostrarCompletadas , setMostrarCompletadas}) => {
   const toggleCompletadas = () => {
@@ -23,7 +22,6 @@ import { faEyeSlash , faEye} from '@fortawesome/free-solid-svg-icons'  //importa
   <FontAwesomeIcon icon={ faEye } className='header__icono-boton'/>
   </button> 
   }
-
   </header>
 
     )
