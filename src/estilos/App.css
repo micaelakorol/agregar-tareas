@@ -72,7 +72,7 @@
 }
 
 .formulario-tareas__input:focus {
-	outline: none; /*cuando doy clic encima, cambia el color del borde inferior*/
+	outline: none; 
 	border-bottom: 2px solid var(--azul);
 }
 
