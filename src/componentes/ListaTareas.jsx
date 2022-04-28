@@ -27,7 +27,7 @@
     if(tarea.id !== id){ 
    return tarea;
   }
-  return;
+  return false;
   }))
   }
     return (
@@ -51,7 +51,7 @@
     borrarTarea={borrarTarea}
   /> 
   }
-  return;
+  return false;
   }) : 
   <div className='lista-tareas__mensaje'>No hay tareas ingresadas :( </div>
   }
